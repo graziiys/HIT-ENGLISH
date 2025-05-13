@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criar Quiz</title>
+    <script type="module" src="scripts/criar.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Criar Quiz</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="entrar.html">Entrar no Jogo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="quiz-info">
+            <h2>Informações do Quiz</h2>
+            <input type="text" id="title" placeholder="Título do Quiz" required>
+            <textarea id="description" placeholder="Descrição do Quiz" required></textarea>
+        </section>
+
+        <section id="question-container">
+            <h2>Adicionar Perguntas</h2>
+            <div class="question-form">
+                <input type="text" id="question" placeholder="Pergunta" required>
+                <input type="text" id="option1" placeholder="Opção 1" required>
+                <input type="text" id="option2" placeholder="Opção 2" required>
+                <input type="text" id="option3" placeholder="Opção 3" required>
+                <input type="text" id="option4" placeholder="Opção 4" required>
+                
+                <div class="options">
+                    <label><input type="radio" name="correct" value="0" required> Opção 1</label>
+                    <label><input type="radio" name="correct" value="1"> Opção 2</label>
+                    <label><input type="radio" name="correct" value="2"> Opção 3</label>
+                    <label><input type="radio" name="correct" value="3"> Opção 4</label>
+                </div>
+                <button id="addQuestionButton" class="btn">Adicionar Pergunta</button>
+            </div>
+        </section>
+
+        <!-- Seção para visualizar as perguntas adicionadas -->
+        <section id="question-list">
+            <h2>Perguntas Adicionadas</h2>
+            <ul id="questionsDisplay"></ul>
+        </section>
+        
+        <button id="saveQuizButton" class="btn">Salvar Quiz</button>
+    </main>
+</body>
+</html>

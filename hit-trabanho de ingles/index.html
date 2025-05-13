@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mara cosmeticos</title>
+<style>
+
+body {
+    background-color: #101d38;
+    color: #000000;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+    animation: aurora 5s infinite; /* Define a animação da aurora */
+    background: #101d38;
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    position: absolute; /* Permite centralizar verticalmente */
+    top: 50%; /* Alinha o topo do contêiner ao centro vertical */
+    left: 50%; /* Alinha a esquerda do contêiner ao centro horizontal */
+    transform: translate(-50%, -50%); /* Move o contêiner de volta pela metade da sua própria largura e altura */
+    z-index: 1; /* Garante que o conteúdo fique acima do fundo */
+}
+
+.logo {
+    opacity: 0; /* Começa com opacidade 0 para ser gradualmente tornada visível */
+    height: auto;
+    width: 80%;
+    border-radius: 50%;
+    transition: opacity 2s, transform 2s; /* Adiciona transições de opacidade e transformação */
+}
+
+/* Adiciona uma classe para a animação da logo */
+.logo.loaded {
+    opacity: 1; /* Torna a logo totalmente visível */
+    transform: scale(1.2); /* Aumenta um pouco o tamanho da logo */
+}
+</style>
+</head>
+<body>
+    <div class="background"></div> <!-- Adiciona o fundo animado -->
+    <div class="container">
+        <img class="logo" src="svg/HOT-ENGLISH.svg" alt="AHF">
+    </div>
+
+    
+    <script>
+        window.onload = function() {
+            var img = document.querySelector('.logo');
+            img.classList.add('loaded'); // Adiciona a classe 'loaded' para iniciar a animação
+    
+            img.addEventListener('transitionend', function(event) {
+                if (event.propertyName === 'opacity' && event.target.classList.contains('loaded')) {
+                    window.location.href = 'entrar.html';
+                }
+            });
+ 
+        };
+    </script>
+        
+</body>
+</html>

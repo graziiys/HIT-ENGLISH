@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo</title>
+    <script type="module" src="scripts/jogo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jogo</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div id="nameInputContainer">
+            <h3>Digite seu nome:</h3>
+            <input type="text" id="playerNameInput" placeholder="Seu nome aqui" />
+            <button id="startButton">Entrar</button>
+        </div>
+        <div id="waitingRoom" style="display: none;">
+            <h3>Esperando jogadores...</h3>
+        </div>
+        <button id="readyButton" style="display: none;">Estou Pronto</button>
+        <div id="quizTitle"></div>
+        <div id="questionDisplay"></div>
+        <div id="optionsContainer"></div>
+        <div id="feedback"></div>
+        <div id="scoresList"></div>
+    </main>
+</body>
+</html>

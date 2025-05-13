@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #240059;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#waitingRoom {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+
+button {
+    background: #5207A3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #495867;
+}
+
+#quizTitle, #questionDisplay, #optionsContainer, #feedback {
+    margin-top: 20px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal h2 {
+    color: #fff; /* Change text color */
+}
+
+.modal input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #5207A3; /* Use your color palette */
+    color: #fff; /* Change text color */
+    border: none;
+    cursor: pointer;
+}
+
+
+
+header {
+    background-color: #5207A3;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.quiz-info, .question-form {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #240059;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #495867;
+}

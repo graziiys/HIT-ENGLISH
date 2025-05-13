@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #161616; /* Background color */
+            color: #AAAAAA; /* Text color */
+            font-family: Arial, sans-serif; /* Default font */
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #5207A3; /* Title color */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid #240059; /* Input border */
+            border-radius: 5px; /* Rounded corners */
+            width: 250px; /* Input width */
+            margin-bottom: 20px; /* Bottom spacing */
+            background-color: #AAAAAA; /* Input background color */
+            color: #240059; /* Input text color */
+        }
+
+        button {
+            padding: 10px 20px; /* Button padding */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #5207A3; /* Button background color */
+            color: white; /* Button text color */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px; /* Font size */
+            transition: background-color 0.3s; /* Transition effect */
+        }
+
+        button:hover {
+            background-color: #240059; /* Button color on hover */
+        }
+
+        a {
+            margin-top: 20px; /* Top spacing */
+            text-decoration: none; /* No underline */
+            color: #5207A3; /* Link color */
+            font-size: 16px; /* Link font size */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Join the Game</h1>
+    <input type="text" id="gamePin" placeholder="Enter the game PIN" />
+    <button id="joinGameButton">Join the Game</button>
+
+    <script src="scripts/entrar.js" type="module"></script>
+
+    <a href="criar.html">Create a new game</a>
+</body>
+</html>
